@@ -1,0 +1,215 @@
+{
+	"pages": [
+		//pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "首页"
+			}
+		},
+		{
+			"path": "pages/postion/postion",
+			"style": {
+				"navigationBarTitleText": "职位",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/user/user",
+			"style": {
+				"navigationBarTitleText": "我的",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/postionDetail/postionDetail",
+			"style": {
+				"navigationBarTitleText": "职位详情",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/companyDetail/companyDetail",
+			"style": {
+				"navigationBarTitleText": "公司主页",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/postionList/postionList",
+			"style": {
+				"navigationBarTitleText": "职位列表",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/companyList/companyList",
+			"style": {
+				"navigationBarTitleText": "公司列表",
+				"enablePullDownRefresh": false
+			}
+		},
+
+		{
+			"path": "pages/onlineResume/onlineResume",
+			"style": {
+				"navigationBarTitleText": "在线简历",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/onlineResume/jobIntention/jobIntention",
+			"style": {
+				"navigationBarTitleText": "求职意愿",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/user/userDetail/userDetail",
+			"style": {
+				"navigationBarTitleText": "用户详情",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/onlineResume/educationExperience/educationExperience",
+			"style": {
+				"navigationBarTitleText": "教育经历",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/onlineResume/internshipExperience/internshipExperience",
+			"style": {
+				"navigationBarTitleText": "实习经历",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/onlineResume/projectExperience/projectExperience",
+			"style": {
+				"navigationBarTitleText": "项目经历",
+				"enablePullDownRefresh": false
+			}
+		},
+
+		{
+			"path": "pages/onlineResume/professionalSkills/professionalSkills",
+			"style": {
+				"navigationBarTitleText": "专业技能",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/collect/collect",
+			"style": {
+				"navigationBarTitleText": "收藏",
+				"enablePullDownRefresh": false
+			}
+
+		},
+
+		{
+			"path": "pages/login/login",
+			"style": {
+				"navigationBarTitleText": "登入",
+				"enablePullDownRefresh": false
+			}
+
+		}
+
+		, {
+			"path": "pages/attachmentResume/attachmentResume",
+			"style": {
+				"navigationBarTitleText": "附件简历",
+				"enablePullDownRefresh": false
+			}
+
+		}
+
+		, {
+			"path": "pages/verify/verify",
+			"style": {
+				"navigationBarTitleText": "认证",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/recruiter/recruiter",
+			"style": {
+				"navigationBarTitleText": "发布者",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/recruiter/postionList/postionList",
+			"style": {
+				"navigationBarTitleText": "发布职位列表",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/recruiter/resumeList/resumeList",
+			"style": {
+				"navigationBarTitleText": "简历列表",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/recruiter/publicPostion/publicPostion",
+			"style": {
+				"navigationBarTitleText": "发布职位",
+				"enablePullDownRefresh": false
+			}
+
+		}
+	    
+        ,{
+            "path" : "pages/search/search",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/deliver/deliver",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+    ],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#FFFFFF",
+		"backgroundColor": "#F8F8F8"
+	},
+	"tabBar": {
+		"borderStyle": "white",
+		"selectedColor": "#2f3640",
+		"list": [{
+				"selectedIconPath": "/static/home.png",
+				"iconPath": "static/unhome.png",
+				"text": "首页",
+				"pagePath": "pages/index/index"
+			},
+			{
+				"selectedIconPath": "/static/postion.png",
+				"iconPath": "static/unpostion.png",
+				"text": "职位",
+				"pagePath": "pages/postion/postion"
+			},
+			{
+				"selectedIconPath": "/static/my.png",
+				"iconPath": "static/unmy.png",
+				"text": "我的",
+				"pagePath": "pages/user/user"
+			}
+		]
+	}
+}

@@ -1,0 +1,61 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/postion/postion",
+    "pages/user/user",
+    "pages/postionDetail/postionDetail",
+    "pages/companyDetail/companyDetail",
+    "pages/postionList/postionList",
+    "pages/companyList/companyList",
+    "pages/onlineResume/onlineResume",
+    "pages/onlineResume/jobIntention/jobIntention",
+    "pages/user/userDetail/userDetail",
+    "pages/onlineResume/educationExperience/educationExperience",
+    "pages/onlineResume/internshipExperience/internshipExperience",
+    "pages/onlineResume/projectExperience/projectExperience",
+    "pages/onlineResume/professionalSkills/professionalSkills",
+    "pages/collect/collect",
+    "pages/login/login",
+    "pages/attachmentResume/attachmentResume",
+    "pages/verify/verify",
+    "pages/recruiter/recruiter",
+    "pages/recruiter/postionList/postionList",
+    "pages/recruiter/resumeList/resumeList",
+    "pages/recruiter/publicPostion/publicPostion",
+    "pages/search/search",
+    "pages/deliver/deliver"
+  ],
+  "subPackages": [],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "uni-app",
+    "navigationBarBackgroundColor": "#FFFFFF",
+    "backgroundColor": "#F8F8F8"
+  },
+  "tabBar": {
+    "borderStyle": "white",
+    "selectedColor": "#2f3640",
+    "list": [
+      {
+        "selectedIconPath": "/static/home.png",
+        "iconPath": "static/unhome.png",
+        "text": "首页",
+        "pagePath": "pages/index/index"
+      },
+      {
+        "selectedIconPath": "/static/postion.png",
+        "iconPath": "static/unpostion.png",
+        "text": "职位",
+        "pagePath": "pages/postion/postion"
+      },
+      {
+        "selectedIconPath": "/static/my.png",
+        "iconPath": "static/unmy.png",
+        "text": "我的",
+        "pagePath": "pages/user/user"
+      }
+    ]
+  },
+  "usingComponents": {},
+  "sitemapLocation": "sitemap27.json"
+}

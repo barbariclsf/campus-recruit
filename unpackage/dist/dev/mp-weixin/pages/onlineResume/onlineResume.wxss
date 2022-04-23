@@ -1,0 +1,98 @@
+page {
+  background-color: #f0f0f0;
+}
+.user_wrap {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  background-color: #FFFFFF;
+  border-bottom: 1rpx solid #f0f0f0;
+}
+.user_wrap image {
+  width: 20%;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  margin: 30rpx;
+}
+.user_wrap .user_info {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+          flex-direction: column;
+  padding: 40rpx 20rpx;
+}
+.user_wrap .user_info .user_name {
+  font-size: 36rpx;
+  font-weight: 600;
+  margin-bottom: 20rpx;
+}
+.user_wrap .user_info .school_info {
+  color: #666;
+}
+.user_wrap .user_info .iconfont {
+  position: absolute;
+  right: 20rpx;
+  top: 30rpx;
+}
+.resume_item {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+          flex-direction: column;
+  margin: 20rpx 0;
+  background-color: #FFFFFF;
+  color: #666;
+}
+.resume_item .icon-tianjia {
+  position: absolute;
+  right: 20rpx;
+  margin-top: -60rpx;
+}
+.resume_item .icon-shuxie {
+  position: absolute;
+  right: 20rpx;
+  margin-top: -60rpx;
+}
+.resume_item .content {
+  border-top: 1rpx solid #EEEEEE;
+}
+.resume_item .content .item {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+          flex-direction: row;
+  margin: 20rpx;
+}
+.resume_item .content .item .item_name {
+  margin-left: 20rpx;
+}
+.resume_item .content .info {
+  margin: 20rpx;
+}
+.resume_item .content .info .info_title {
+  font-size: 32rpx;
+  color: #333333;
+  margin-bottom: 10rpx;
+}
+.resume_item .content .info .time {
+  position: absolute;
+  right: 50rpx;
+  margin-top: -40rpx;
+}
+.resume_item .content .info .icon-xuanzeqixiayige {
+  position: absolute;
+  right: 20rpx;
+  margin-top: -40rpx;
+}
+.resume_item .title {
+  margin: 20rpx;
+  font-size: 36rpx;
+  color: #333333;
+}
+

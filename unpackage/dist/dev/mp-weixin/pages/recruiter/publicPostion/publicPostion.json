@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "发布职位",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "rich-text-editor": "/components/RichTextEditor"
+  }
+}

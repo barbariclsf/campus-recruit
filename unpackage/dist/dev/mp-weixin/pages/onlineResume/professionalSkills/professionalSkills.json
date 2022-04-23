@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "专业技能",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "rich-text-editor": "/components/RichTextEditor"
+  }
+}

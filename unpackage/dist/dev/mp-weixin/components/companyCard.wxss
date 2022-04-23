@@ -1,0 +1,37 @@
+.company_info_wrap {
+  border-bottom: 1rpx solid #e5e5e5;
+  width: 750rpx;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+}
+.company_info_wrap image {
+  width: 20%;
+  margin: 20rpx;
+}
+.company_info_wrap .company {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+          flex-direction: column;
+}
+.company_info_wrap .company .company_name {
+  color: #000000;
+  margin: 20rpx;
+  font-size: 32rpx;
+  overflow: hidden;
+}
+.company_info_wrap .company .company_describe {
+  margin-left: 20rpx;
+  overflow: hidden;
+  color: #666;
+}
+.company_info_wrap .company .recruit_num {
+  margin: 20rpx;
+  color: #007AFF;
+  width: 500rpx;
+}
+

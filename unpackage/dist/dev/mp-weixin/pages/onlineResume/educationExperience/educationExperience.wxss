@@ -1,0 +1,48 @@
+.exp_title {
+  margin: 20rpx;
+  font-size: 40rpx;
+  font-weight: 600;
+}
+.exp_item {
+  background-color: #FFFFFF;
+  border-bottom: 1rpx solid #F1F1F1;
+}
+.exp_item input {
+  padding: 10rpx 20rpx;
+  width: 100%;
+}
+.exp_item picker {
+  padding: 10rpx 20rpx;
+}
+.exp_item textarea {
+  padding: 10rpx 20rpx;
+}
+.exp_item .icon-xuanzeqixiayige {
+  position: absolute;
+  right: 20rpx;
+  margin-top: -50rpx;
+}
+.title {
+  font-size: 32rpx;
+  padding-top: 10rpx;
+  padding-left: 20rpx;
+}
+.btn_remove {
+  background-color: #55aaff;
+  position: fixed;
+  width: 40%;
+  margin-left: 30rpx;
+  bottom: 10rpx;
+  color: #FFFFFF;
+  font-size: 36rpx;
+}
+.btn_save {
+  background-color: #55aaff;
+  position: fixed;
+  width: 40%;
+  margin-left: 420rpx;
+  bottom: 10rpx;
+  color: #FFFFFF;
+  font-size: 36rpx;
+}
+

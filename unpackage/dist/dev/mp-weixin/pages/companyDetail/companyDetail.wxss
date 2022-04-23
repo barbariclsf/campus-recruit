@@ -1,0 +1,149 @@
+.company_info {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  width: 90%;
+  margin: 40rpx;
+  -webkit-box-shadow: 0 0 10px #f0f0f0;
+  box-shadow: 0 0 10px #f0f0f0;
+}
+.company_info image {
+  margin: 30rpx;
+  width: 20%;
+}
+.company_info .company_describe {
+  padding-bottom: 20rpx;
+}
+.company_info .company_describe .company_name {
+  margin-top: 50rpx;
+  font-size: 36rpx;
+  font-weight: 500;
+  color: #000000;
+}
+.company_info .company_describe .company_describe {
+  color: #666;
+}
+.company_introduce {
+  margin: 30rpx;
+  overflow: hidden;
+  color: #666;
+  font-size: 32rpx;
+}
+.work_place {
+  margin: 100rpx 0;
+}
+.work_place .title {
+  font-size: 36rpx;
+  font-weight: 500;
+  margin-left: 20rpx;
+  margin-top: 40rpx;
+}
+.work_place .place_content {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  color: #666;
+  margin: 20rpx;
+}
+.recruit_info .title {
+  font-size: 36rpx;
+  font-weight: 500;
+  margin-left: 20rpx;
+  margin-top: 40rpx;
+}
+.recruit_info .recruit_num {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  padding: 20rpx;
+  color: #666;
+  border-bottom: 1rpx solid #eeeeee;
+}
+.recruit_info .recruit_num text {
+  margin-left: 20rpx;
+  margin-top: 10rpx;
+}
+.recruit_info .postion_item {
+  border-bottom: 1rpx solid #eeeeee;
+}
+.recruit_info .postion_item .postion_name {
+  margin: 20rpx;
+  font-size: 32rpx;
+}
+.recruit_info .postion_item .salary {
+  position: absolute;
+  right: 20rpx;
+  margin-top: -60rpx;
+  color: #D1372C;
+}
+.recruit_info .postion_item .public_time {
+  position: absolute;
+  right: 20rpx;
+  margin-top: -60rpx;
+  color: #666;
+}
+.recruit_info .postion_item .demand {
+  margin: 20rpx;
+  color: #666;
+}
+.btm_tool {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 120rpx;
+  background-color: #fff;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+}
+.btm_tool .share {
+  -webkit-box-flex: 2;
+  -webkit-flex: 2;
+          flex: 2;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  font-size: 24rpx;
+  position: relative;
+}
+.btm_tool .share button {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+.btm_tool .collect {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-flex: 3;
+  -webkit-flex: 3;
+          flex: 3;
+  height: 100rpx;
+  background-color: #52a4f6;
+  color: #fff;
+  font-size: 30rpx;
+  font-weight: 600;
+  -webkit-border-radius: 50rpx;
+          border-radius: 50rpx;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+}
+

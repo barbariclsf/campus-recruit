@@ -1,0 +1,67 @@
+page {
+  background-color: #f0f0f0;
+}
+.user_item {
+  background-color: #FFFFFF;
+  border-bottom: 1rpx solid #F1F1F1;
+}
+.user_item image {
+  width: 15%;
+  position: absolute;
+  right: 20rpx;
+  top: 20rpx;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+}
+.user_item .title {
+  font-size: 32rpx;
+  padding-top: 20rpx;
+  padding-left: 20rpx;
+}
+.user_item input {
+  padding: 20rpx;
+  width: 100%;
+}
+.user_item picker {
+  padding: 20rpx;
+}
+.user_item .icon-xuanzeqixiayige {
+  position: absolute;
+  right: 20rpx;
+  margin-top: -50rpx;
+}
+.school_info {
+  margin-top: 20rpx;
+  margin-bottom: 100rpx;
+}
+.school_info .school_item {
+  background-color: #FFFFFF;
+  border-bottom: 1rpx solid #F1F1F1;
+}
+.school_info .school_item .title {
+  font-size: 32rpx;
+  padding-top: 20rpx;
+  padding-left: 20rpx;
+}
+.school_info .school_item input {
+  padding: 20rpx;
+  width: 100%;
+}
+.school_info .school_item picker {
+  padding: 20rpx;
+}
+.school_info .school_item .icon-xuanzeqixiayige {
+  position: absolute;
+  right: 20rpx;
+  margin-top: -50rpx;
+}
+.btn_save {
+  background-color: #55aaff;
+  position: fixed;
+  width: 95%;
+  margin-left: 20rpx;
+  bottom: 10rpx;
+  color: #FFFFFF;
+  font-size: 36rpx;
+}
+

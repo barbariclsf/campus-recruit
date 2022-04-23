@@ -1,0 +1,40 @@
+.verify_item {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+          flex-direction: row;
+  padding: 20rpx;
+  border-bottom: 1rpx solid #eaeaea;
+}
+.verify_item .title {
+  font-size: 32rpx;
+  padding: 10rpx;
+}
+.verify_item picker {
+  position: absolute;
+  right: 60rpx;
+  margin-top: 15rpx;
+}
+.verify_item .iconfont {
+  position: absolute;
+  right: 20rpx;
+  margin-top: 10rpx;
+}
+.verify_item input {
+  position: absolute;
+  right: 20rpx;
+  text-align: right;
+  color: #666;
+}
+.verify_btn {
+  position: fixed;
+  margin-left: 20rpx;
+  bottom: 20rpx;
+  width: 95%;
+  background-color: #4e9dec;
+  color: #FFFFFF;
+}
+

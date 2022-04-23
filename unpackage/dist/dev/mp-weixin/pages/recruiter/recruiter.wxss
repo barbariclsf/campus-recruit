@@ -1,0 +1,25 @@
+page {
+  background-color: #f7f6fa;
+}
+.recruit_item {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  padding: 30rpx;
+  margin-top: 20rpx;
+  width: 100%;
+  background-color: #FFFFFF;
+}
+.recruit_item .title {
+  font-size: 32rpx;
+  font-weight: 600;
+}
+.recruit_item .browse {
+  position: absolute;
+  right: 50rpx;
+}
+.recruit_item .iconfont {
+  position: absolute;
+  right: 20rpx;
+}
+

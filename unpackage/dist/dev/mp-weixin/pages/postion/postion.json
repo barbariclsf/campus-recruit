@@ -1,0 +1,10 @@
+{
+  "navigationBarTitleText": "职位",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "sl-filter": "/components/sl-filter/sl-filter",
+    "search": "/components/search",
+    "postion-card": "/components/postionCard",
+    "company-card": "/components/companyCard"
+  }
+}

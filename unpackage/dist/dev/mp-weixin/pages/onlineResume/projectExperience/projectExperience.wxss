@@ -1,0 +1,48 @@
+.pro_title {
+  margin: 20rpx;
+  font-size: 40rpx;
+  font-weight: 600;
+}
+.title {
+  font-size: 32rpx;
+  padding-top: 20rpx;
+  padding-left: 20rpx;
+}
+.pro_item {
+  background-color: #FFFFFF;
+  border-bottom: 1rpx solid #F1F1F1;
+}
+.pro_item input {
+  padding: 20rpx;
+  width: 100%;
+}
+.pro_item picker {
+  padding: 20rpx;
+}
+.pro_item textarea {
+  padding: 20rpx;
+}
+.pro_item .icon-xuanzeqixiayige {
+  position: absolute;
+  right: 20rpx;
+  margin-top: -50rpx;
+}
+.btn_remove {
+  background-color: #55aaff;
+  position: fixed;
+  width: 40%;
+  margin-left: 30rpx;
+  bottom: 10rpx;
+  color: #FFFFFF;
+  font-size: 36rpx;
+}
+.btn_save {
+  background-color: #55aaff;
+  position: fixed;
+  width: 40%;
+  margin-left: 420rpx;
+  bottom: 10rpx;
+  color: #FFFFFF;
+  font-size: 36rpx;
+}
+

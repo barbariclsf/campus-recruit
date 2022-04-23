@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "教育经历",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "rich-text-editor": "/components/RichTextEditor"
+  }
+}

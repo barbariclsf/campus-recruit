@@ -1,0 +1,1 @@
+<view><button data-event-opts="{{[['tap',[['login',['$event']]]]]}}" class="btn_login" bindtap="__e"><text class="iconfont icon-weixin1"></text><text>授权登录</text></button></view>

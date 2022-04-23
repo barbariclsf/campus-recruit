@@ -1,0 +1,63 @@
+.user_wrap {
+  width: 100%;
+  background-color: #55aaff;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+}
+.user_wrap .user_info {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+          flex-direction: column;
+  margin: 80rpx;
+  color: #FFFFFF;
+}
+.user_wrap .user_info .user_name {
+  font-size: 36rpx;
+  font-weight: 600;
+}
+.user_wrap image {
+  width: 150rpx;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  position: absolute;
+  right: 30rpx;
+  top: 50rpx;
+}
+.iconfont {
+  color: #666;
+}
+.user_content navigator {
+  width: 100%;
+  font-size: 32rpx;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+}
+.user_content navigator .iconfont {
+  margin: 40rpx 20rpx;
+}
+.user_content navigator .item {
+  margin-top: 40rpx;
+}
+.user_content navigator .icon-xuanzeqixiayige {
+  position: absolute;
+  right: 0;
+}
+.user_content navigator .load_resum {
+  position: absolute;
+  margin-top: 40rpx;
+  right: 50rpx;
+  color: #666;
+}
+.user_content navigator picker {
+  position: absolute;
+  margin-top: 40rpx;
+  right: 50rpx;
+  color: #666;
+}
+

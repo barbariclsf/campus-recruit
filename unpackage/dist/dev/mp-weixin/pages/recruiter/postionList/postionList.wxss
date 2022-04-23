@@ -1,0 +1,93 @@
+.postion_list {
+  background-color: #f9f9f9;
+  padding-bottom: 120rpx;
+}
+.postion_item {
+  background-color: #FFFFFF;
+  margin: 20rpx;
+  border: 1rpx solid #e5e5e5;
+  width: 95%;
+  -webkit-border-radius: 20rpx;
+          border-radius: 20rpx;
+}
+.postion_item .postion_name {
+  margin: 10rpx 20rpx;
+  color: #000000;
+  font-size: 36rpx;
+  font-weight: 500;
+}
+.postion_item .salary {
+  position: absolute;
+  right: 40rpx;
+  margin-top: -50rpx;
+  color: #bf0000;
+}
+.postion_item .public_time {
+  color: #b4b4b4;
+  position: absolute;
+  right: 40rpx;
+  margin-top: -40rpx;
+}
+.postion_item .demand {
+  margin-left: 20rpx;
+  color: #666;
+}
+.postion_item .company_info {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+}
+.postion_item .company_info image {
+  margin: 20rpx;
+  width: 15%;
+}
+.postion_item .company_info .company {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+          flex-direction: column;
+  margin: 30rpx 20rpx;
+}
+.postion_item .company_info .company .company_name {
+  color: #000000;
+  font-size: 32rpx;
+  margin-bottom: 10rpx;
+}
+.postion_item .company_info .company .company_describe {
+  color: #666;
+}
+.postion_item .icon-shuxie {
+  position: absolute;
+  right: 120rpx;
+  margin-top: -70rpx;
+}
+.postion_item .icon-changyonggoupiaorenshanchu {
+  position: absolute;
+  right: 40rpx;
+  margin-top: -70rpx;
+}
+.public_btn {
+  position: fixed;
+  bottom: 0rpx;
+  width: 95%;
+  -webkit-border-radius: 20rpx;
+          border-radius: 20rpx;
+  height: 80rpx;
+  margin-left: 20rpx;
+  margin-bottom: 20rpx;
+  background-color: #4e9dec;
+  color: #FFFFFF;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+}
+

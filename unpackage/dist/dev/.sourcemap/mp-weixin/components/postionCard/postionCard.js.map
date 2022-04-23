@@ -1,0 +1,16 @@
+{
+  "version": 3,
+  "sources": [
+    "uni-app:///main.js"
+  ],
+  "names": [
+    "createPage",
+    "Page"
+  ],
+  "mappings": ";;;;;;;;;;kDAAA;AACA;AACA,oH;AACAA,UAAU,CAACC,oBAAD,CAAV,C",
+  "file": "components/postionCard/postionCard.js",
+  "sourcesContent": [
+    "import 'uni-pages';\nimport Vue from 'vue'\nimport Page from './components/postionCard/postionCard.vue'\ncreatePage(Page)"
+  ],
+  "sourceRoot": ""
+}

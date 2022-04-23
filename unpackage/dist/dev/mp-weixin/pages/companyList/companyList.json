@@ -1,0 +1,10 @@
+{
+  "navigationBarTitleText": "公司列表",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "sl-filter": "/components/sl-filter/sl-filter",
+    "company-card": "/components/companyCard",
+    "search": "/components/search",
+    "postion-card": "/components/companyCard"
+  }
+}

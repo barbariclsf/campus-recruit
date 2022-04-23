@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "收藏",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "tabs": "/components/tabs",
+    "postion-card": "/components/postionCard",
+    "company-card": "/components/companyCard"
+  }
+}

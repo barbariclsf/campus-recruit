@@ -1,0 +1,56 @@
+.wrap_top {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  margin-top: 10rpx;
+  margin-left: 30rpx;
+}
+.wrap_top .title {
+  font-size: 36rpx;
+}
+.wrap_top .iconfont {
+  position: absolute;
+  right: 30rpx;
+}
+.reume_item {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  width: 95%;
+  margin: 20rpx;
+  -webkit-box-shadow: 0 0 10px #f0f0f0;
+  box-shadow: 0 0 10px #f0f0f0;
+}
+.reume_item image {
+  width: 20%;
+}
+.reume_item .resume_info {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+          flex-direction: column;
+  margin-top: 40rpx;
+  margin-left: 20rpx;
+  font-size: 36rpx;
+}
+.reume_item .resume_name {
+  width: 320rpx;
+  height: 40rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.reume_item .resume_date {
+  font-size: 28rpx;
+  color: #666;
+  margin-top: 10rpx;
+}
+.reume_item .iconfont {
+  position: absolute;
+  margin-top: 50rpx;
+  right: 60rpx;
+}
+

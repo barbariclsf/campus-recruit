@@ -1,0 +1,112 @@
+.postion_info .postion_name {
+  color: #000000;
+  font-size: 40rpx;
+  font-weight: 500;
+  margin: 20rpx;
+}
+.postion_info .demand {
+  color: #666;
+  margin-left: 20rpx;
+}
+.postion_info .salary {
+  margin: 20rpx;
+  color: #D1372C;
+}
+.postion_info .company_info {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  width: 90%;
+  margin: 40rpx;
+  -webkit-box-shadow: 0 0 10px #f0f0f0;
+  box-shadow: 0 0 10px #f0f0f0;
+}
+.postion_info .company_info image {
+  margin: 30rpx;
+  width: 20%;
+}
+.postion_info .company_info .company_describe .company_name {
+  margin-top: 50rpx;
+  font-size: 32rpx;
+  color: #000000;
+}
+.postion_info .company_info .company_describe .company_describe {
+  color: #666;
+}
+.postion_info .postion_describe .title {
+  font-size: 36rpx;
+  font-weight: 500;
+  margin-left: 20rpx;
+  margin-top: 40rpx;
+}
+.postion_info .postion_describe .describe_content {
+  width: 95%;
+  margin: 20rpx;
+  color: #666;
+}
+.postion_info .work_place {
+  margin-bottom: 200rpx;
+}
+.postion_info .work_place .title {
+  font-size: 36rpx;
+  font-weight: 500;
+  margin-left: 20rpx;
+  margin-top: 40rpx;
+}
+.postion_info .work_place .place_content {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  color: #666;
+  margin: 20rpx;
+}
+.btm_tool {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 120rpx;
+  background-color: #fff;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+}
+.btm_tool .tool_item {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  font-size: 24rpx;
+  position: relative;
+  width: 100rpx;
+}
+.btm_tool .tool_item button {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+.btm_tool .btn_deliver {
+  height: 90rpx;
+  width: 500rpx;
+  background-color: #52a4f6;
+  color: #fff;
+  font-size: 30rpx;
+  font-weight: 600;
+  -webkit-border-radius: 50rpx;
+          border-radius: 50rpx;
+  margin-left: 40rpx;
+  margin-top: 20rpx;
+}
+
