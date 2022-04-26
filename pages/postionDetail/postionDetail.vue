@@ -2,7 +2,7 @@
 	<view class="postion_page">
 		<view class="postion_info">
 			<view class="postion_name">{{ postionData.postionName }}</view>
-			<view class="demand">应届|{{ postionData.demandEducation }}| {{ postionData.demandMajor}}</view>
+			<view class="demand">{{ postionData.demandEducation }}|{{ postionData.demandMajor}}|招收{{ postionData.num}}人</view>
 			<view class="salary">{{ postionData.salary}}/月</view>
 
 			<navigator :url="'../companyDetail/companyDetail?companyId=' + companyData.companyId" hover-class="none">
@@ -46,8 +46,11 @@
 				<view class="iconfont icon-shoucang1"></view>
 				<view>取消收藏</view>
 			</view>
-			<button class="tool_item btn_deliver" @click="deliver">
+			<button v-if="isDeliver == false" class="tool_item btn_deliver" @click="deliver">
 				投个简历
+			</button>
+			<button v-else-if="isDeliver == true"  class="tool_item btn_deliver" >
+				已投递
 			</button>
 		</view>
 
@@ -81,7 +84,8 @@
 				//弹出标志
 				Uptag: false,
 				resume:{},
-				userInfo:{}
+				userInfo:{},
+				isDeliver:false
 			}
 		},
 		onLoad(option) {
@@ -159,6 +163,7 @@
 					if (res.code == 200) {
 						if (res.result == 'success') {
 							console.log(res.data)
+							this.isDeliver = true;
 							this.$toast('投递成功', 1000, 'none', true);
 
 						} else {
@@ -174,7 +179,7 @@
 			loadPostionData: function(pId) {
 				this.userInfo = uni.getStorageSync('userInfo')
 				this.$post('postion/selectPostion', {
-					postionId: pId
+					postionId: pId,
 				}).then(res => {
 					if (res.code == 200) {
 						if (res.result == 'success') {
@@ -184,15 +189,18 @@
 							this.tradeData = res.data[2];
 							this.description = this.postionData.description
 							this.checkIsCollect();
+							this.checkIsDeliver(this.userInfo.userId,this.postionData.postionId)
 							this.$toast('查询成功', 1000, 'none', true);
 
 						} else {
 							this.$toast('查询失败', 1000, 'none', true);
 						}
 					} else {
+						
 						this.$toast('出错了', 1000, 'none', true);
 					}
 				}).catch(err => {
+					
 					this.$toast('出错了', 1000, 'none', true);
 				})
 			},
@@ -215,6 +223,29 @@
 				}).catch(err => {
 					this.$toast('出错了', 1000, 'none', true);
 				})
+			},
+			checkIsDeliver:function(userId,postionId){
+				
+				this.$post('deliver/checkDeliver', {
+					userId: userId,
+					postionId: postionId
+				}).then(res => {
+					if (res.code == 200) {
+						if (res.result == 'success') {
+							console.log("res",res);
+							this.isDeliver = true;
+							
+							this.$toast('查询成功', 1000, 'none', true);
+				
+						} else {
+							this.$toast('查询失败', 1000, 'none', true);
+						}
+					} 
+				}).catch(err => {
+					
+					this.$toast('出错了', 1000, 'none', true);
+				})
+				
 			},
 			checkIsCollect: function() {
 				this.$post('collect/selectOneCollect', {

@@ -125,6 +125,7 @@
 				this.loadJobIntentionData();
 			}
 		},
+		onPullDownRefresh() {},
 		methods: {
 
 			saveUserInfo: function() {

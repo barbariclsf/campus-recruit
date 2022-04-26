@@ -129,6 +129,14 @@
 				isUserSelf: true
 			}
 		},
+		onPullDownRefresh() {
+			setTimeout(()=>{
+				this.userInfo = wx.getStorageSync('userInfo');
+				this.loadResumeData(this.userInfo.userId);
+				uni.stopPullDownRefresh();
+			},1000)
+			
+		},
 		onLoad(option) {
 			var type = option.type;
 			console.log(type)

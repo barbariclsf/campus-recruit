@@ -261,7 +261,15 @@ var _default =
       isUserSelf: true };
 
   },
-  onLoad: function onLoad(option) {var _this = this;
+  onPullDownRefresh: function onPullDownRefresh() {var _this = this;
+    setTimeout(function () {
+      _this.userInfo = wx.getStorageSync('userInfo');
+      _this.loadResumeData(_this.userInfo.userId);
+      uni.stopPullDownRefresh();
+    }, 1000);
+
+  },
+  onLoad: function onLoad(option) {var _this2 = this;
     var type = option.type;
     console.log(type);
     if (type == 1) {
@@ -274,17 +282,17 @@ var _default =
       then(function (res) {
         if (res.code == 200) {
           if (res.result == 'success') {
-            _this.userInfo = res.data;
+            _this2.userInfo = res.data;
 
-            _this.$toast('查询成功', 1000, 'none', true);
+            _this2.$toast('查询成功', 1000, 'none', true);
           } else {
-            _this.$toast('查询失败', 1000, 'none', true);
+            _this2.$toast('查询失败', 1000, 'none', true);
           }
         } else {
-          _this.$toast('出错了', 1000, 'none', true);
+          _this2.$toast('出错了', 1000, 'none', true);
         }
       }).catch(function (err) {
-        _this.$toast('出错了', 1000, 'none', true);
+        _this2.$toast('出错了', 1000, 'none', true);
       });
       this.loadResumeData(uid);
     } else {
@@ -312,24 +320,24 @@ var _default =
   },
   methods: {
 
-    loadResumeData: function loadResumeData(uid) {var _this2 = this;
+    loadResumeData: function loadResumeData(uid) {var _this3 = this;
       this.$post('resume', {
         userId: uid }).
       then(function (res) {
         if (res.code == 200) {
           if (res.result == 'success') {
             console.log(res);
-            _this2.resume = res.data;
-            uni.setStorageSync('resume', _this2.resume);
-            _this2.$toast('查询成功', 1000, 'none', true);
+            _this3.resume = res.data;
+            uni.setStorageSync('resume', _this3.resume);
+            _this3.$toast('查询成功', 1000, 'none', true);
           } else {
-            _this2.$toast('查询失败', 1000, 'none', true);
+            _this3.$toast('查询失败', 1000, 'none', true);
           }
         } else {
-          _this2.$toast('出错了', 1000, 'none', true);
+          _this3.$toast('出错了', 1000, 'none', true);
         }
       }).catch(function (err) {
-        _this2.$toast('出错了', 1000, 'none', true);
+        _this3.$toast('出错了', 1000, 'none', true);
       });
 
 

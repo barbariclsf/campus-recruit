@@ -285,7 +285,7 @@ var _default =
       then(function (res) {
         if (res.code == 200) {
           if (res.result == 'success') {
-
+            _this2.recruitNum = 0;
             res.data.forEach(function (v) {
               _this2.recruitNum += v.postion.num;
             });

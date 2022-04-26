@@ -54,7 +54,7 @@
 			"path": "pages/onlineResume/onlineResume",
 			"style": {
 				"navigationBarTitleText": "在线简历",
-				"enablePullDownRefresh": false
+				"enablePullDownRefresh": true
 			}
 		},
 		{
@@ -187,7 +187,8 @@
 		"navigationBarTextStyle": "black",
 		"navigationBarTitleText": "uni-app",
 		"navigationBarBackgroundColor": "#FFFFFF",
-		"backgroundColor": "#F8F8F8"
+		"backgroundColor": "#F8F8F8",
+		"enablePullDownRefresh":true
 	},
 	"tabBar": {
 		"borderStyle": "white",

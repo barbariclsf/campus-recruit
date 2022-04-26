@@ -74,7 +74,7 @@
 
 				</swiper-item>
 				<swiper-item v-if="companyList.length > 8">
-					<navigator v-for="(item,index) in companyList" :key="index"  v-if="index > 8 && index < 16" class="company_item" 
+					<navigator v-for="(item,index) in companyList" :key="index"  v-if="index >= 8 && index < 16" class="company_item" 
 					:url="'../companyDetail/companyDetail?companyId=' + item.companyId " hover-class="none">
 						<image :src="item.logo" mode="widthFix"></image>
 					</navigator>
@@ -146,7 +146,7 @@
 					.then(res => {
 						if (res.code == 200) {
 							if (res.result == 'success') {
-								
+								this.recruitNum = 0;
 								res.data.forEach(v => {
 									this.recruitNum += v.postion.num;
 								})

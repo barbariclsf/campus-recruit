@@ -170,6 +170,10 @@ var _default =
 
     scale: {
       type: String,
+      default: '' },
+
+    num: {
+      type: String,
       default: '' } },
 
 

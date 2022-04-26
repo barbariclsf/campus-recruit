@@ -7,6 +7,7 @@
 			<postionCard v-for="(item,index) in postionList" :key="index" :postionName="item.postion.postionName" :salary="item.postion.salary"
 			 :publicDate="item.postion.publicDate" :demandEducation="item.postion.demandEducation" :demandMajor="item.postion.demandMajor"
 			 :logo="item.company.logo" :companyName="item.company.companyName" :tradeName="item.trade.tradeName" :scale="item.company.scale"
+			 :num="item.postion.num"
 			 @postionDetail="toPostionDetail(item.postion.postionId)">
 			</postionCard>
 		</view>

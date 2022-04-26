@@ -4,7 +4,7 @@
 			<view class="postion_item" v-for="(item,index) in postionList" :key="index"  hover-class="none" @click="handleClick">
 				<view class="postion_name">{{ item.postion.postionName }}</view>
 				<view class="salary">{{ item.postion.salary }}/月</view>
-				<view class="demand">应届生|{{ item.postion.demandEducation}}|{{ item.postion.demandMajor }}</view>
+				<view class="demand">{{ item.postion.demandEducation}}|{{ item.postion.demandMajor }}|招收{{ item.postion.num }}人</view>
 				<view class="public_time">{{ item.postion.publicDate}}</view>
 				<view class="company_info">
 					<image :src="item.company.logo" mode="widthFix"></image>

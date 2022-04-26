@@ -12,7 +12,7 @@
 		<view class="window all-transition" :style="direction=='bottom' ? objDirection : ''" v-show="direction=='bottom'">
 			<view class="title">确认简历投递</view>
 			<view class="resume_wrap">
-				<view class="reume_item">
+				<view class="reume_item" v-if="resumeName != ''">
 					<image class="fileImg" src="../static/file.png" mode="widthFix"></image>
 					<view class="resume_info">
 						<view class="type">附件简历</view>

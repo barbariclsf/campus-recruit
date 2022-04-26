@@ -3,7 +3,7 @@
 		<view class="postion_info" hover-class="none" @click="handleClick">
 			<view class="postion_name">{{ postionName }}</view>
 			<view class="salary">{{ salary }}/月</view>
-			<view class="demand">应届生|{{ demandEducation}}|{{ demandMajor }}</view>
+			<view class="demand">{{ demandEducation}}|{{ demandMajor }}|招收{{ num }}人</view>
 			<view class="public_time">{{ publicDate}}</view>
 			<view class="company_info">
 				<image :src="logo" mode="widthFix"></image>
@@ -53,6 +53,10 @@
 				default:''
 			},
 			scale:{
+				type:String,
+				default:''
+			},
+			num:{
 				type:String,
 				default:''
 			}

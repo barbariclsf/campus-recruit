@@ -164,7 +164,22 @@ __webpack_require__.r(__webpack_exports__);
 
   },
   onShow: function onShow() {
-    this.loadPostionListData();
+    if (uni.getStorageSync('isLogin')) {
+      this.loadPostionListData();
+    } else {
+      uni.showModal({
+        title: '登录提示',
+        content: '您还未登录, 请先登录',
+        showCancel: false,
+        success: function success(res) {
+          if (res.confirm) {
+            uni.switchTab({
+              url: '../user/user' });
+
+          }
+        } });
+
+    }
   },
   methods: {
     toPostionDetail: function toPostionDetail(postionId) {

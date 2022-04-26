@@ -197,6 +197,9 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+
+
+
 {
   components: {
     switchEdit: switchEdit },
@@ -213,7 +216,8 @@ __webpack_require__.r(__webpack_exports__);
       //弹出标志
       Uptag: false,
       resume: {},
-      userInfo: {} };
+      userInfo: {},
+      isDeliver: false };
 
   },
   onLoad: function onLoad(option) {
@@ -291,6 +295,7 @@ __webpack_require__.r(__webpack_exports__);
         if (res.code == 200) {
           if (res.result == 'success') {
             console.log(res.data);
+            _this2.isDeliver = true;
             _this2.$toast('投递成功', 1000, 'none', true);
 
           } else {
@@ -316,15 +321,18 @@ __webpack_require__.r(__webpack_exports__);
             _this3.tradeData = res.data[2];
             _this3.description = _this3.postionData.description;
             _this3.checkIsCollect();
+            _this3.checkIsDeliver(_this3.userInfo.userId, _this3.postionData.postionId);
             _this3.$toast('查询成功', 1000, 'none', true);
 
           } else {
             _this3.$toast('查询失败', 1000, 'none', true);
           }
         } else {
+
           _this3.$toast('出错了', 1000, 'none', true);
         }
       }).catch(function (err) {
+
         _this3.$toast('出错了', 1000, 'none', true);
       });
     },
@@ -348,7 +356,30 @@ __webpack_require__.r(__webpack_exports__);
         _this4.$toast('出错了', 1000, 'none', true);
       });
     },
-    checkIsCollect: function checkIsCollect() {var _this5 = this;
+    checkIsDeliver: function checkIsDeliver(userId, postionId) {var _this5 = this;
+
+      this.$post('deliver/checkDeliver', {
+        userId: userId,
+        postionId: postionId }).
+      then(function (res) {
+        if (res.code == 200) {
+          if (res.result == 'success') {
+            console.log("res", res);
+            _this5.isDeliver = true;
+
+            _this5.$toast('查询成功', 1000, 'none', true);
+
+          } else {
+            _this5.$toast('查询失败', 1000, 'none', true);
+          }
+        }
+      }).catch(function (err) {
+
+        _this5.$toast('出错了', 1000, 'none', true);
+      });
+
+    },
+    checkIsCollect: function checkIsCollect() {var _this6 = this;
       this.$post('collect/selectOneCollect', {
         userId: this.userInfo == '' ? 0 : this.userInfo.userId,
         contentId: this.postionData.postionId }).
@@ -357,23 +388,23 @@ __webpack_require__.r(__webpack_exports__);
           if (res.result == 'success') {
             console.log("check  " + res.data);
             if (res.data != null) {
-              _this5.isCollect = true;
+              _this6.isCollect = true;
             }
-            _this5.$toast('查询成功', 1000, 'none', true);
+            _this6.$toast('查询成功', 1000, 'none', true);
 
           } else {
-            _this5.$toast('查询失败', 1000, 'none', true);
+            _this6.$toast('查询失败', 1000, 'none', true);
           }
         } else {
-          _this5.$toast('出错了', 1000, 'none', true);
+          _this6.$toast('出错了', 1000, 'none', true);
         }
       }).catch(function (err) {
-        _this5.$toast('出错了', 1000, 'none', true);
+        _this6.$toast('出错了', 1000, 'none', true);
       });
 
 
     },
-    collectPostion: function collectPostion() {var _this6 = this;
+    collectPostion: function collectPostion() {var _this7 = this;
       if (!wx.getStorageSync('isLogin')) {
         uni.showModal({
           title: '登录提示',
@@ -395,17 +426,17 @@ __webpack_require__.r(__webpack_exports__);
         then(function (res) {
           if (res.code == 200) {
             if (res.result == 'success') {
-              _this6.isCollect = true;
-              _this6.$toast('收藏成功', 1000, 'none', true);
+              _this7.isCollect = true;
+              _this7.$toast('收藏成功', 1000, 'none', true);
 
             } else {
-              _this6.$toast('收藏失败', 1000, 'none', true);
+              _this7.$toast('收藏失败', 1000, 'none', true);
             }
           } else {
-            _this6.$toast('出错了', 1000, 'none', true);
+            _this7.$toast('出错了', 1000, 'none', true);
           }
         }).catch(function (err) {
-          _this6.$toast('出错了', 1000, 'none', true);
+          _this7.$toast('出错了', 1000, 'none', true);
         });
 
       }

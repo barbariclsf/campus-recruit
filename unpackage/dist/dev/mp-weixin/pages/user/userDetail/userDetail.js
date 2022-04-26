@@ -257,6 +257,7 @@ var _default =
       this.loadJobIntentionData();
     }
   },
+  onPullDownRefresh: function onPullDownRefresh() {},
   methods: {
 
     saveUserInfo: function saveUserInfo() {var _this = this;
